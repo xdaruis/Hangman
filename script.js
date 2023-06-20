@@ -66,8 +66,7 @@ function checkLetter(element) {
         document.getElementById("randomWord").innerHTML += (foundLetters[i] + " ");
     }
     if (isFound == 0) {
-        --lives;
-        document.getElementById("lives").innerHTML = "Lives: " + lives + "❤️";
+        document.getElementById("lives").innerHTML = "Lives: " + --lives + "❤️";
     }
     checkGameStatus();
 }
