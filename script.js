@@ -52,14 +52,14 @@ function checkGameStatus() {
     }
 }
 
-function checkLetter(element) {
+function checkLetter(actLetter) {
     if (gameStatus == 0) {
         return;
     }
     document.getElementById("randomWord").innerHTML = "";
     let isFound = 0;
     for (let i = 0; i < word.length; ++i) {
-        if (element.innerHTML == word[i]) {
+        if (actLetter.innerHTML == word[i]) {
             foundLetters[i] = word[i];
             isFound = 1;
         }
