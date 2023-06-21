@@ -28,15 +28,14 @@ const fruits = [
 const word = fruits[Math.floor(Math.random() * fruits.length)];
 const foundLetters = [];
 
+let lives = 7, gameStatus = 1;
+
 function generateWord() {
     for (let i = 0; i < word.length; ++i) {
         foundLetters[i] = "_";
         document.getElementById("randomWord").innerHTML += "_ ";
     }
 }
-
-let lives = 7;
-let gameStatus = 1;
 
 function checkGameStatus() {
     if (lives == 0) {
