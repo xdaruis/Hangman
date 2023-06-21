@@ -25,8 +25,8 @@ const fruits = [
     "CLEMENTINE",
 ];
 
-var word = fruits[Math.floor(Math.random() * fruits.length)];
-var foundLetters = [];
+const word = fruits[Math.floor(Math.random() * fruits.length)];
+const foundLetters = [];
 
 function generateWord() {
     for (let i = 0; i < word.length; ++i) {
@@ -35,8 +35,8 @@ function generateWord() {
     }
 }
 
-var lives = 7;
-var gameStatus = 1;
+let lives = 7;
+let gameStatus = 1;
 
 function checkGameStatus() {
     if (lives == 0) {
